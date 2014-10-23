@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:id="@+id/activityRoot"
+                android:background="#fff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+
+    <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:background="#fff"
+            android:layout_above="@+id/rl_toolbar"
+            android:layout_height="match_parent"
+            android:text="Hello World, MyActivity"
+            />
+
+    <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:background="#ff6600"
+            android:layout_above="@+id/rl_space"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Toolbar"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_space"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Do Some Thing Here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
+
